@@ -1,0 +1,14 @@
+{
+  "name": "audiobooked",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/app.ts --outdir static/dist --target browser",
+    "build:min": "bun build src/app.ts --outdir static/dist --target browser --minify",
+    "watch": "bun build src/app.ts --outdir static/dist --target browser --watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
